@@ -12,4 +12,8 @@ CHIP Or {
 
     PARTS:
     //// Replace this comment with your code.
+    Not(in = a, out = anot);
+    Not(in = b, out = bnot);
+    And(a = anot, b = bnot, out = andnot);
+    Not(in = andnot, out = out);
 }
